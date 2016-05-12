@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #define f(x) ((x)*(x)*(x)+(x)-1)
-
+#define g(x) (3*(x)*(x)+1)
 int main(void)
 {
      float e,a,b,xn;
@@ -11,11 +11,10 @@ int main(void)
      {  puts("Enter a and b");
         scanf("%f %f",&a,&b);
      }while((f(a)*f(b))>0);
+     xn=(a+b)/2;
      do
      {
-        xn=((a*f(b))-(b*f(a)))/(f(b)-f(a));
-        if((f(xn)*f(a))<0) b=xn;
-        else    a=xn;
+        xn=xn-(f(xn)/g(xn));
      }
      while(fabs(f(xn))>e);
 
