@@ -1,2 +1,3 @@
+script:scons
 language : c
 compiler: gcc
