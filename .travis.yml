@@ -1,9 +1,4 @@
-script : make
-build: BackwardInterpolation.c   NewtonForward.c  'Runge Gutta.c'
-BisectionMethod.c         NewtonRaphson.c  Simpsons13.c
-Euler.c                   Trapezoidal.c
-LangrangeInterpolation.c  RegulaFalsi.c
-
 language : c
+script : make
 compiler: gcc
 
