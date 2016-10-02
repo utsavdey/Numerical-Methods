@@ -1,3 +1,4 @@
+script : make
 language : c
 compiler: gcc
-script: make
+
